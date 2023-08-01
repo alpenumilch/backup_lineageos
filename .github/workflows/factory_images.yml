@@ -1,3 +1,4 @@
+
 name: factory images
 
 on:
@@ -46,9 +47,9 @@ jobs:
       env:
         MY_PAT: ${{ secrets.MY_PAT }}
       run: |
-        find . -iname "download_upload"
-        readlink -f download_upload
-        sed -i "s/github_pat_CHANGEME/$MY_PAT/g" download_upload
+        find . -iname "script_for_google_pixel"
+        readlink -f script_for_google_pixel
+        sed -i "s/github_pat_CHANGEME/$MY_PAT/g" script_for_google_pixel
         #sudo apt-get install -y rename > /dev/null 2>&1
         chmod +x script_for_google_pixel
         echo "Running script now ............"
