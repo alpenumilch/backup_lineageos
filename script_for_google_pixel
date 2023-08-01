@@ -4,19 +4,20 @@ touch ~/.bashrc.local
 . ~/.bashrc.local
 
 #sudo apt-get install -y rename > /dev/null 2>&1
-#go install github.com/github-release/github-release@latest > /dev/null 2>&1
+go install github.com/github-release/github-release@latest > /dev/null 2>&1
 rm -f index.html*
 
 myArray=("sailfish" "walleye" "taimen" "blueline" "crosshatch" "sargo" "bonito" "flame" "coral" "sunfish" "bramble" "redfin" "barbet" "oriole" "raven" "bluejay" "panther" "cheetah" "lynx" "marlin")
-for DEVICE in ${myArray[@]}
-do
-github-release release \
-    --user alpenumilch \
-    --repo backup_lineageos \
-    --tag $DEVICE
-
+#for DEVICE in ${myArray[@]}
+#do
+#github-release release \
+#    --user alpenumilch \
+#    --repo backup_lineageos \
+#    --tag $DEVICE
+#
 #sleep 1
 #done
+
 
 curl -SL https://gist.githubusercontent.com/alpenumilch/e5c0949e92540c967138d8b2e7b3f4a4/raw -o google.pixel.factory.txt
 
