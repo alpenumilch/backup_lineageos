@@ -20,7 +20,7 @@ myArray=("sailfish" "walleye" "taimen" "blueline" "crosshatch" "sargo" "bonito" 
 
 
 curl -SL https://gist.githubusercontent.com/alpenumilch/e5c0949e92540c967138d8b2e7b3f4a4/raw -o google.pixel.factory.txt
-shuf -n 1 google.pixel.factory.txt > get_a_line
+shuf -n 2 google.pixel.factory.txt > get_a_line
 
 for URL in `cat get_a_line`
 do
